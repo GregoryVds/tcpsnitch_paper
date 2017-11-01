@@ -14,7 +14,6 @@ tcpsnitch.pdf
 *.out
 *.lof
 *.lot
-*.bbl
 *.blg
 *.gls
 *.cut
