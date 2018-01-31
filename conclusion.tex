@@ -24,8 +24,9 @@ the standard Java API. We revealed that \texttt{TCP\_INFO}, a non-standard
 Linux TCP option, is the second most often used option with TCP sockets on
 Android.
 
-\tcpsnitch and its associated website provide an overview of how real
-applications use the socket API. In summary, we observed that the socket API
-usage in the wild differs greatly from textbook usage. Many Internet sockets
-do not exchange data, many API calls are redundant and many calls use
-tiny data buffers.
+We expect that \tcpsnitch could be used by various members of our community.
+Software developers
+could use it to verify how some of the libraries that they use interact with
+the networking stack. Students could use it to better understand how
+network applications are implemented or analyse them thanks to its ability to 
+capture the packets sent by a specific application.

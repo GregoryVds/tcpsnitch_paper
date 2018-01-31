@@ -11,10 +11,11 @@ including \texttt{socket}, \texttt{bind}, \texttt{connect},
 \texttt{accept}, \texttt{close}, \texttt{listen}, \texttt{send},
 \texttt{receive},\ldots Those system calls interact with the
 underlying network implementation that is part of the operating
-system kernel. The socket API was not the only approach to
-interact with the network stack. The STREAM API, based on
-\cite{ritchie1984unix} was extended to support the TCP/IP protocol
-stack and used in Unix System V \cite{rago1993unix}.
+system kernel. 
+%The socket API was not the only approach to
+%interact with the network stack. The STREAM API, based on
+%\cite{ritchie1984unix} was extended to support the TCP/IP protocol
+%stack and used in Unix System V \cite{rago1993unix}.
 
 Over the years, the popularity of the socket API grew in parallel
 with the deployment of the global Internet. Nowadays, the
@@ -28,20 +29,18 @@ include libraries exposing URL and implementations of
 HTTP/HTTPS. For C developers, libraries such as \texttt{libcurl} 
 also provide higher level abstractions.
 
-During the last 30 years, the socket API has evolved, with new features added
-over the years. Some were dedicated to the support of specific features, such
-as ATM \cite{almesberger1998using} or Quality of Service
-\cite{abbasi2002quality}. Other extensions \cite{Provos_Scalable:2000,
-gammo2004comparing}
+During the last 30 years, the socket API has evolved, with new features added over the years.
+Some were
+dedicated to the support of specific features, such as ATM
+%\cite{almesberger1998using} 
+or Quality of Service
+%\cite{abbasi2002quality}. 
+Other extensions \cite{Provos_Scalable:2000,gammo2004comparing}
 focused on improving the
 interactions between applications and the underlying stack through
 \texttt{poll/select}, \texttt{epoll},\ldots On Linux, new system
 calls to directly send pages or entire files (like \texttt{sendfile})
-were added. Furthermore, socket extensions have been defined
-for each new transport protocol \cite{schier2012using,natarajan2009sctp}.
-Socket extensions have also been proposed to deal with multihoming
-\cite{Schmidt:intents} and specific APIs have been implemented on top
-of Multipath TCP \cite{hesmans2015smapp,hesmans2016enhanced}.
+were added. 
 
 Recently, the Internet Engineering Task Force created the 
 Transport Services (taps) working group whose main objective is
